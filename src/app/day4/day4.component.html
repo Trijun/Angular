@@ -1,0 +1,13 @@
+<div class="center">
+    <h3>
+      Enter the fill in the blanks
+   </h3>
+   <input [(ngModel)]="ans" type="text" name="answer" id="answer">
+   <div>
+     <p>Sun rises from east to <span>{{ans}}</span></p>
+   </div>
+   
+   <button type="button" (click)="rightanswer()">Submit</button>
+   <p [style.color]="result?'green':'red'">Answer is {{final}}</p>
+  </div>
+  

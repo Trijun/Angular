@@ -1,0 +1,9 @@
+Learnt Two way Binding
+
+To use two way binding ,
+    -> import forms module into app.module.ts
+    -> add Forms module to the imports
+
+Two way binding  = property binding + event binding
+
+We use two way binding whem we need view and model to be in sync
