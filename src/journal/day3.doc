@@ -1,0 +1,18 @@
+Learnt how to use if else , switch and for loop
+
+Conditional Rendering
+1.NgIF
+2.Ngswitch
+3.Ngfor
+
+1.NgIF
+  ----*ngIf
+  *ngIf="displayName;else reactDiv"
+2.Ngswitch
+  ----[Ngswitch]
+  -------------- *ngSwitchCase
+
+3.Ngfor
+  ----*Ngfor="let var of variable"
+
+*ngFor="let name of names"

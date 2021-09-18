@@ -1,0 +1,19 @@
+  
+<h1 *ngIf="displayName;else reactDiv"> Welcome to Angular </h1>
+<ng-template #reactDiv>
+<h1>Welcome to React</h1>
+</ng-template>
+
+
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">Red</div>
+  <div *ngSwitchCase="'green'">Green</div>
+  <div *ngSwitchCase="'yellow'">Yellow</div>
+  <div *ngSwitchCase="'blue'">Blue</div>
+</div>
+
+
+
+<div *ngFor="let name of names; index as ind">
+    <h1> {{ind}} {{name}}</h1>
+</div>
