@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    /* padding:0px; */
+    background-color: cyan;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_nF3SplgnsG-9a79OJjZazHb-KiXguPSJA&usqp=CAU);
+}

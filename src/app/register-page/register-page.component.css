@@ -1,0 +1,30 @@
+.verticalAlignCenter{
+    padding: 0px 20px;
+    margin: 35px auto;
+}    
+.containerDecoration{
+    background-color: white;
+    padding: 10px 20px;
+    padding-bottom: 30px;
+    min-width:300px;
+    border-radius: 40px 0px;
+    box-shadow: royalblue;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.image{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+.textAlignCenter{
+    text-align: center;
+    padding: 10px;
+}
+label
+{
+    font-weight: medium;
+    padding: 5px 0px;
+}
