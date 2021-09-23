@@ -14,7 +14,7 @@
                     <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
                         <div class="row">
                             <div class="col-6">
-                                <div class="form-group ">
+                                <div class="form-group">
                                     <label>First Name</label>
                                    <input type="text" class="form-control" name="firstName" ngModel>
                                </div>
@@ -55,11 +55,21 @@
                            </div>
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary form-control">Submit</button>
+                        <div class="row">
+                            <div class="col-4 container">
+                                <button type="submit" class="btn btn-primary form-control">Submit</button>
+                            </div>
+                            
+                        </div>
+                        
                     </form>
                     <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <span>Our company will definitely steal all your data so make sure you agree to accept all our terms and condition.</span>
+                    </div>
                     <div class="textAlignCenter">
-                        <p>Already have an account? <a href="#">Login in</a></p>
+                        <p>Already have an account? <a href="#">Log in</a></p>
                     </div>
                 </div>
          </div>                   

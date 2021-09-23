@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 // forms module added for using ngModel
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +12,9 @@ import { Day3Component } from './day3/day3.component';
 import { Day4Component } from './day4/day4.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { LoginPageReactiveFormComponent } from './login-page-reactive-form/login-page-reactive-form.component';
+import { TourOfHeroesComponent } from './tour-of-heroes/tour-of-heroes.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,12 +24,16 @@ import { RegisterPageComponent } from './register-page/register-page.component';
     Day3Component,
     Day4Component,
     LoginPageComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    LoginPageReactiveFormComponent,
+    TourOfHeroesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule, // added inorder to use forms module
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormAPIService } from '../services/form-api.service';
 
 @Component({
   selector: 'app-login-page',
@@ -7,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
-  constructor() { }
+  constructor (private postId: FormAPIService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit() { }
 
   onSubmit(userForm: any){
     console.log(userForm.value);
+    this.postId.reutrnAPI(userForm.value).subscribe((response)=>{console.log(response)})
   }
+
 }

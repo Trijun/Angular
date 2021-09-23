@@ -1,0 +1,33 @@
+
+    <div class="container">
+        <div class="verticalAlignCenter"> 
+            <div class="row">
+                    <div class="col-4 container containerDecoration ">
+                        <div class="image">
+                            <img src="https://png.pngtree.com/png-vector/20190904/ourlarge/pngtree-abstract-flower-logo-designs-inspiration-isolated-on-white-backg-png-image_1722658.jpg" alt="">
+                        </div>
+                        <div class="container textAlignCenter">
+                            <h4>Welcome back</h4>
+                        </div>
+                        <br> 
+                        <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+                            <div class="form-group">
+                                 <label>User Name</label>
+                                <input type="text" class="form-control" formControlName="userName">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" formControlName="password">
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary form-control">Submit</button>
+                        </form>
+                        <br>
+                        <div class="textAlignCenter">
+                            <p>Dont have an account? <a href="#">Sign up</a></p>
+                        </div>
+                    </div>
+             </div>                   
+        </div>
+    </div>        
