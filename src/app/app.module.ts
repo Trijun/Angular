@@ -15,6 +15,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
 import { LoginPageReactiveFormComponent } from './login-page-reactive-form/login-page-reactive-form.component';
 import { TourOfHeroesComponent } from './tour-of-heroes/tour-of-heroes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginPageComponent,
     RegisterPageComponent,
     LoginPageReactiveFormComponent,
-    TourOfHeroesComponent
+    TourOfHeroesComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,

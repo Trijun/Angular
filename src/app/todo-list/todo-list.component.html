@@ -1,0 +1,30 @@
+
+<div class="container col-4 containerDecorations verticalAlignCenter">
+    <div class="container">
+        <div class="form-group container">
+            <div class="row textAlignCenter">
+                <h4>TO-DO List</h4>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-8">
+                    <input type="text" class="form-control" #input>
+                </div>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-primary form-control" (click)="buttonFunction(input)">Add to list</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-10">
+            <ul>
+                <div *ngFor="let items of object">
+                    <li>{{items.list}}</li>
+                    <hr>
+                </div>
+            </ul>
+        </div>
+    </div>    
+</div>

@@ -1,0 +1,12 @@
+.containerDecorations{
+    border: 3px solid black;
+    padding: 50px 0px;
+}
+
+.textAlignCenter{
+    text-align: center;
+}
+
+.verticalAlignCenter{
+    margin: 35px auto;
+}    
