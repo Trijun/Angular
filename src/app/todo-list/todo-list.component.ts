@@ -22,12 +22,15 @@ export class TodoListComponent implements OnInit {
   buttonFunction(input:any){
     console.log(input.value);
 
-    this.api.addTodoList(input.value).subscribe();
+    this.api.addTodoList(input.value).subscribe((data)=>{
+        console.log(data);
+    }
+    );
 
-    this.api.getTodoList().subscribe((data)=>{
-      console.log(data);
-      this.object=data;
-    })
+    // this.api.getTodoList().subscribe((data)=>{
+    //   console.log(data);
+    //   this.object=data;
+    // })
 
   }
 }
