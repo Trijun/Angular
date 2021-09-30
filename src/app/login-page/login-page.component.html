@@ -14,6 +14,7 @@
                         <div class="form-group">
                              <label>User Name</label>
                             <input type="text" class="form-control" name="userName" ngModel>
+                            <!-- <div [hidden]></div> -->
                         </div>
                         <br>
                         <div class="form-group">
@@ -21,11 +22,11 @@
                                 <input type="password" class="form-control" name="password" ngModel>
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary form-control">Submit</button>
+                        <button routerLink="todo-list-page" type="submit" class="btn btn-primary form-control">Submit</button>
                     </form>
                     <br>
                     <div class="textAlignCenter">
-                        <p>Dont have an account? <a href="#">Sign up</a></p>
+                        <p>Dont have an account? <a href="#" routerLink="register-page">Sign up</a></p>
                     </div>
                 </div>
          </div>                   

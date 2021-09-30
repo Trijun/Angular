@@ -1,0 +1,43 @@
+<div class="body ">
+    <div class="flex">
+        <div class="col-4 ">
+            <div class="row whiteBox ">
+                <div class="textAlignCenter greyFont ">
+                    <h6>What do you have in mind?</h6>
+                </div>
+                <div class="textAlignCenter marginBottom opensansFont">
+                    <h1>To-do</h1>
+                </div>
+                <br>
+                <div class="relative padding">
+                     <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+                        <input type="text" class="form-control" name="data" placeholder="Finish tasks..." ngModel>
+                        <div class="addlistButton">
+                            <button type="submit" class="plusButton flex"><h3>+</h3></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="row whiteBox">
+                <div class="textAlignCenter opensansFont">
+                    <!-- day -->
+                    <h1>Monday</h1>
+                </div>
+                <div class="textAlignCenter greyFont marginBottom">
+                    <!-- date -->
+                    <h6>January 03, 2016</h6>
+                </div>
+                <div *ngFor="let content of list" class="list">
+                    <!-- data -->
+                    <label class="content"><p>{{content.data}}</p>
+                        <input type="checkbox" unchecked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div> 
+</div>

@@ -1,0 +1,96 @@
+<div class="row max opensansFont">
+    <div class="col-lg-6 flex" id="left">
+        <div>
+            <div class="flex">
+                <!-- picture -->
+                <img id="bird" src="https://i.pinimg.com/564x/83/37/60/83376071fdef4dc8aa7250a44297708b.jpg" alt="">
+            </div>
+            <br>
+            <div class="flex">
+                <h5><b>Maecenas mattis egestas</b></h5>
+            </div>
+
+            <div class="flex textAlignCenter">
+                <p class="fontsize">Erdum et malesuada fames ac ante ipsum primis <br> in faucibus uspendisee porto</p>
+            </div>
+            <br>
+            <div class="flex">
+                <div>
+                    <!-- capsule shape -->
+                    <button class="capsule"></button>
+                </div>
+                <div>
+                    <!-- circle shape -->
+                    <button  class="circle"></button>
+                </div>
+                <div>
+                    <!-- circle shape -->
+                    <button  class="circle"></button>
+                </div>
+                <div>
+                    <!-- circle shape -->
+                    <button  class="circle"></button>
+                </div>
+            </div>  
+        </div> 
+    </div>
+    
+    <div class="col-lg-6 flex" id="right">
+        <div class="container">
+            <div class="logoHeading niconneFont">
+                <h1>Donit</h1>
+            </div>
+            <br>
+            <div class="flex ">
+                <h5>Get things done witht the best To-do List app</h5>
+            </div>
+            <br>
+            <br>
+            <div class="flex">
+                <div>
+                    <form  #userForm="ngForm">
+                        <div>
+                            <p class="inputHeading fontsize">Users name or Email</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text"  class="form-control" id="textbox" name="name" ngModel>
+                        </div>
+                        <br>
+                        <div>
+                            <p class="inputHeading fontsize">Password</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="textbox" name="password" ngModel>
+                        </div>
+                        <div class="textAlignRight">
+                            <p class="fontsize">Forgot password?</p>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+            <div class="flex ">
+                <button class="button " (click)="onSubmit(userForm)" routerLink="pintrest-todo-list-page">Sign in</button>
+            </div>
+            <br>
+            <div class="flex">
+                <div id="lineWidth">
+                    <hr>
+                </div>
+                <div id="or">
+                    <p class="fontsize">or</p>
+                </div>
+                <div id="lineWidth">
+                    <hr>
+                </div>
+            </div>
+            <div class="flex ">
+                <button class="googleButton fontsize"><img id="googleIcon" src="https://img.icons8.com/color/48/000000/google-logo.png"/>Sign in with Google</button>
+            </div> 
+            <br>
+            <div class="flex textAlignCenter marginBottom">
+                <p class="fontsize">New Lovebirds? <a href="" routerLink="pintrest-login-page">Create Account</a></p>
+            </div>
+            
+        </div> 
+    </div>   
+</div>

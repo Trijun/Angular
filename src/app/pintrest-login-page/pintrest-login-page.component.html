@@ -1,0 +1,61 @@
+<div class="row cambayFont size">
+    <div class="col-lg-6 flex" id="left">
+        <div class="">
+            <div class="flex margin">
+                <h1><b>Welcome Back!</b></h1>
+            </div>
+            <div class="flex margin textAlignCenter">
+                <p id="leftParagraph">To keep connected with us please login with <br> your personal info</p>
+            </div>
+            <div class="flex">
+                <button class="redButton poppinsFont"  routerLink="">SIGN IN</button>
+            </div>        
+        </div> 
+    </div>   
+    <div class="col-lg-6 flex" id="right">
+        <div>
+            <div class="flex">
+                <h1><b>Create Account</b></h1>
+            </div>
+            <br>
+            <div class="flex">
+                <div class="icons flex">
+                    <img id="iconImage" src="https://img.icons8.com/material-outlined/24/000000/facebook-f.png"/>
+                </div>
+                <div class="icons flex">
+                    <img id="iconImage" src="https://img.icons8.com/windows/32/000000/google-plus.png"/>
+                </div>
+                <div class="icons flex">
+                    <img id="iconImage" src="https://img.icons8.com/windows/32/000000/linkedin-2.png"/>
+                </div>
+            </div>
+            <br>
+            <div class="flex textAlignCenter">
+                <p id="rightParagraph">or use your email for registeration</p>
+            </div>
+            <div class="flex">
+                <div>
+                    <form #userForm="ngForm">
+                        <div class="form-group">
+                            <input type="text"  class="form-control" id="textbox" placeholder="Name" name="name" ngModel>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text"  class="form-control" id="textbox" placeholder="Email"  name="email" ngModel>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="textbox" placeholder="Password"  name="password" ngModel>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+            <br>
+            <div class="flex">
+                <button class="redButton poppinsFont" (click)="onSubmit(userForm)" routerLink="pintrest-login-page" >SIGN UP</button>
+            </div>  
+        </div> 
+    </div>   
+</div>
+
+

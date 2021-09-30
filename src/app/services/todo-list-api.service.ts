@@ -8,13 +8,13 @@ export class TodoListApiService {
 
   constructor(private http:HttpClient) { }
   
-  public link = "https://6149eb7807549f001755a6d5.mockapi.io/user";
+  link = "https://6149eb7807549f001755a6d5.mockapi.io/user";
 
   getTodoList(){
     return this.http.get(this.link);
   }
   addTodoList(data:any){
     console.log(data);
-    return this.http.post(this.link,data.list);
+    return this.http.post(this.link,{"data":data});
   }
 }

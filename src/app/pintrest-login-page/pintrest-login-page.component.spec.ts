@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TourOfHeroesComponent } from './tour-of-heroes.component';
+import { PintrestLoginPageComponent } from './pintrest-login-page.component';
 
-describe('TourOfHeroesComponent', () => {
-  let component: TourOfHeroesComponent;
-  let fixture: ComponentFixture<TourOfHeroesComponent>;
+describe('PintrestLoginPageComponent', () => {
+  let component: PintrestLoginPageComponent;
+  let fixture: ComponentFixture<PintrestLoginPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TourOfHeroesComponent ]
+      declarations: [ PintrestLoginPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TourOfHeroesComponent);
+    fixture = TestBed.createComponent(PintrestLoginPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
