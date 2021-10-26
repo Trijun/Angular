@@ -11,11 +11,14 @@ export class PintrestTodoListPageComponent implements OnInit {
   constructor(private api: PintrestTodoListAPIService) { }
 
   public list:any;
+  finished:any
+  // finished:any;
   
     ngOnInit(): void {
       this.api.getTodoList().subscribe((data)=>{
         console.log(data);
         this.list=data;
+        this.finished=false;
       });
     }
 
@@ -23,12 +26,19 @@ export class PintrestTodoListPageComponent implements OnInit {
 
       this.api.addTodoList(userForm.value).subscribe((data)=>{
         console.log(data);
+        this.ngOnInit();
       });
 
-      this.api.getTodoList().subscribe((data)=>{
-        console.log(data);
-        this.list=data;
-      })
+     
+   }
+   onDelete(content: any){
+    console.log(content);
+    this.finished=true;
+    // this.contentId=content.id
+     this.api.removeTodoList(content.id).subscribe((data)=>{
+      this.ngOnInit();
+     }
+     )
    }
 
 }

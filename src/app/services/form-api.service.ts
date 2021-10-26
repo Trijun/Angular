@@ -13,6 +13,6 @@ export class FormAPIService {
   }
   reutrnAPI(data:any){
     console.log(data);
-    return this.http.post("https://6149eb7807549f001755a6d5.mockapi.io/formAPI",data);
+    return this.http.post("https://6149eb7807549f001755a6d5.mockapi.io/formAPI",{name:data});
   }
 }

@@ -5,6 +5,9 @@
     /* background: linear-gradient(to  right, rgb(247, 82, 82), rgb(250, 56, 56)); */
     background: linear-gradient(to  right, #93A8BD, #7f93a7);
     color: white;
+    margin: 0;
+    height: 100%;
+    padding: 50px 0px;
 }
 .poppinsFont{
     font-family: 'Poppins', sans-serif;
@@ -42,7 +45,7 @@
     font-family: 'Cambay', sans-serif;
 
 }
-#textbox{
+.textbox{
     width: 400px;
     height: 40px;
     background-color: #e6e6e6;
@@ -60,9 +63,9 @@
 }
 #right{
     background-color: white;
-    margin:  10px 0px;
+  
+    height: 100%;
 }
 .size{
-    width: auto;
     height: 640px;
 }

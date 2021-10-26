@@ -108,3 +108,8 @@
 .opensansFont{
   font-family: 'Open Sans', sans-serif;
 }
+.taskFinished{
+  color: gr;
+  font-size: 16px;
+  text-decoration: line-through;
+}

@@ -53,14 +53,14 @@
                             <p class="inputHeading fontsize">Users name or Email</p>
                         </div>
                         <div class="form-group">
-                            <input type="text"  class="form-control" id="textbox" name="name" ngModel>
+                            <input type="text"  class="form-control textbox"  name="name" ngModel>
                         </div>
                         <br>
                         <div>
                             <p class="inputHeading fontsize">Password</p>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="textbox" name="password" ngModel>
+                            <input type="password" class="form-control textbox"  name="password" ngModel>
                         </div>
                         <div class="textAlignRight">
                             <p class="fontsize">Forgot password?</p>
@@ -69,7 +69,7 @@
                 </div>
             </div>  
             <div class="flex ">
-                <button class="button " (click)="onSubmit(userForm)" routerLink="pintrest-todo-list-page">Sign in</button>
+                <button class="button " (click)="onSubmit(userForm)" [routerLink]="link">Sign in</button>
             </div>
             <br>
             <div class="flex">

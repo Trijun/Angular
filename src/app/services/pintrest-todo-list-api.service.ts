@@ -16,4 +16,8 @@ export class PintrestTodoListAPIService {
     console.log(data);
     return this.http.post(this.link,data);
   }
+  removeTodoList(id:any){
+    console.log(id)
+    return this.http.delete(`${this.link}/${id}`);
+  }
 }

@@ -37,22 +37,22 @@
                 <div>
                     <form #userForm="ngForm">
                         <div class="form-group">
-                            <input type="text"  class="form-control" id="textbox" placeholder="Name" name="name" ngModel>
+                            <input type="text"  class="form-control textbox" placeholder="Name" name="name" ngModel>
                         </div>
                         <br>
                         <div class="form-group">
-                            <input type="text"  class="form-control" id="textbox" placeholder="Email"  name="email" ngModel>
+                            <input type="text"  class="form-control textbox"  placeholder="Email"  name="email" ngModel>
                         </div>
                         <br>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="textbox" placeholder="Password"  name="password" ngModel>
+                            <input type="password" class="form-control textbox"  placeholder="Password"  name="password" ngModel>
                         </div>
                     </form>
                 </div>
             </div>  
             <br>
             <div class="flex">
-                <button class="redButton poppinsFont" (click)="onSubmit(userForm)" routerLink="pintrest-login-page" >SIGN UP</button>
+                <button class="redButton poppinsFont" (click)="onSubmit(userForm)" routerLink="pintrest-register-page" >SIGN UP</button>
             </div>  
         </div> 
     </div>   

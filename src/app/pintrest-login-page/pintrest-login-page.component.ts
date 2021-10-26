@@ -14,7 +14,9 @@ export class PintrestLoginPageComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit(userForm: any){
-    console.log(userForm.value);
-    this.api.reutrnAPI(userForm.value).subscribe((response)=>{console.log(response)})
-  }
+    console.log(userForm);
+    this.api.reutrnAPI(userForm).subscribe((response)=>{
+      console.log(response)
+  })
+}
 }
